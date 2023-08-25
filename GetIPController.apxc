@@ -1,0 +1,15 @@
+public class GetIPController {
+  public String ipAddress {get; set;}
+    public GetIPController(){         
+ 
+        if (ipAddress == '' || ipAddress == null) {
+            ipAddress = ApexPages.currentPage().getHeaders().get('X-Salesforce-SIP');
+        } 
+        
+        /* sandbox  
+        if (ipAddress == '' || ipAddress == null) {
+            ipAddress = ApexPages.currentPage().getHeaders().get('X-Forwarded-For');
+        }*/
+              
+    }
+ }
