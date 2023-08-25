@@ -1,0 +1,10 @@
+<apex:page controller="GetIPController">
+    <center>
+        <br/><br/>
+         <span style="font-size:19px;">IP Address of this current machine is</span>
+        <br/>
+       <span style="font-size:19px;">
+           {!ipAddress}
+        </span>
+    </center>
+ </apex:page>
